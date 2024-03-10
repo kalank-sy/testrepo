@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/login_css/style_login.css">
+
+</head>
+
+<body>
+    <div id="main">
+        <div class="row">
+            <div id="side">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/images/login_images/clean.jpg" height="600px" width="400px">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/login_images/house.jpg" height="600px" width="400px">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/login_images/Wavy_Cst-01_Single-09.jpg" height="600px" width="400px">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+            <div id="form-div">
+                <h1>HomeHelpingHand</h1>
+                <form action="/login" method="post">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                    </div>
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                        </label>
+                    </div>
+                    <a class="frget " href="#000">Forgot Password ?</a>
+                    <button class="login" type="submit">Login</button>
+                    <div class="or">
+                        <hr>
+                        <p>Or</p>
+                        <hr>
+                    </div>
+                    <div class="signgog">
+                        <button type="button" class="google-sign-in-button">
+                            Sign in with Google
+                        </button>
+                    </div>
+                    <div class="newacc">
+                        <div class="nc">
+                            <p>New Customer?<a href="signup.html"> Create Account</a></p>
+                            <button type="submit" class="btn btn-primary" id="btn">Submit</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
